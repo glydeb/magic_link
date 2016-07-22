@@ -1,0 +1,11 @@
+{
+  "name": "magic_link",
+  "version": "1.0.0",
+  "description": "showcase page/application",
+  "main": "app.js",
+  "scripts": {
+    "test": "node-debug server/app.js"
+  },
+  "author": "Glydewell Burdick",
+  "license": "ISC"
+}

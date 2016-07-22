@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Big-Hearted Hangout</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/styles/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="assets/styles/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" href="/assets/images/favicon.ico">
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script src="vendors/toastr.js"></script>
+    <script src="vendors/aws-sdk.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/clientapp.js"></script>
+    <script type="text/javascript" src="/assets/scripts/directives/uploader.js"></script>
+    <script type="text/javascript" src="/assets/scripts/directives/startfrom.js"></script>
+    <script type="text/javascript" src="/assets/scripts/factories/doGoodFactory.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/adminController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/badgesController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/communityroomController.js"></script>
+
+    <script type="text/javascript" src="/assets/scripts/controllers/landingpageController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/loginController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/navController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/profileController.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/trackerController.js"></script>
+
+
+  </head>
+  <body ng-app="myApp">
+    <header ng-include="'/views/templates/header.html'" ></header>
+
+    <main class="valign-wrapper" ng-view></main>
+    <footer ng-include="'/views/templates/footer.html'" class="page-footer amber"></footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="vendors/materialize.js"></script>
+  <script src="vendors/init.js"></script>
+
+  </body>
+</html>
